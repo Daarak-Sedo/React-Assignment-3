@@ -40,8 +40,9 @@ function UserRegistrationForm() {
     <h1>User Registration Form :-</h1>
     <form onSubmit={handleSubmit}>
       <label>
-        First Name:
+        First Name :
         <input
+        class="firstName_text_fi"
           type="text"
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
@@ -49,8 +50,9 @@ function UserRegistrationForm() {
       </label>
       <br />
       <label>
-        Last Name:
+        Last Name :
         <input
+        class="lastName_text_fi"
           type="text"
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
@@ -68,8 +70,9 @@ function UserRegistrationForm() {
       </label>
       <br />
       <label>
-        Country:
+        Country :
         <input
+        class="countryName_text_fi"
           type="text"
           value={country}
           onChange={(e) => setCountry(e.target.value)}
@@ -78,6 +81,7 @@ function UserRegistrationForm() {
       <br />
       <div className="input5">
       <input
+      class="1stCheckBox_text_fi"
           type="checkbox"
           checked={marketingEmails}
           onChange={(e) => setMarketingEmails(e.target.checked)}
@@ -91,13 +95,17 @@ function UserRegistrationForm() {
       </div>
 
       <br />
+      <div className="input-section-6">
       <label>
         Profile Picture:
         <input
+        class="2ndCheckBox_text_fi"
           type="file"
           onChange={(e) => setProfilePicture(e.target.files[0])}
         />
       </label>
+      </div>
+     
       <br />
      
 <br />

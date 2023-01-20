@@ -27,7 +27,7 @@ form{
 input{
     width: 60%;
     height: 30px;
-    margin: 10px 0px 10px 0;
+    margin: 10px 0px 10px 10px;
 }
 button{
     width: 30%;
@@ -42,11 +42,16 @@ button{
 #input-box-5{
     width: 20px;
 }
+label{
+    font-size: small;
+}
 #label5{
-    color: red;
     padding-left: 10px;
     /* margin: 20PX 0 20PX 0; */
     position: relative;
     bottom: 10px;
     
+}
+.input-section-6{
+padding-left: 60px;
 }
