@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css" 
 
 function UserRegistrationForm() {
   const [firstName, setFirstName] = useState("");
@@ -34,8 +35,9 @@ function UserRegistrationForm() {
   };
 
   return (
-    <div>
-      <h1>User Registration Form :-</h1>
+    <>
+    <div className="caintainer">
+    <h1>User Registration Form :-</h1>
     <form onSubmit={handleSubmit}>
       <label>
         First Name:
@@ -74,14 +76,20 @@ function UserRegistrationForm() {
         />
       </label>
       <br />
-      <label>
-        Receive Marketing Emails:
-        <input
+      <div className="input5">
+      <input
           type="checkbox"
           checked={marketingEmails}
           onChange={(e) => setMarketingEmails(e.target.checked)}
+          id="input-box-5"
         />
-      </label>
+      <label id="label5">
+        Receive Marketing Emails
+        </label>
+        
+
+      </div>
+
       <br />
       <label>
         Profile Picture:
@@ -91,13 +99,14 @@ function UserRegistrationForm() {
         />
       </label>
       <br />
-      {/* {formError && <p>{formError}</p
-
-    } */}
+     
 <br />
 <button type="submit">Submit</button>
 </form>
-</div>
+    </div>
+     
+    
+</>
 );
 }
 
